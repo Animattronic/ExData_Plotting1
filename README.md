@@ -1,3 +1,15 @@
+## Note to assignment
+
+I have splitted logic for building plots into several files, which share some logic - to avoid re-writing code several times.
+
+1. base_plotting_script.R - contains common logic for reading and cleaning data
+2. plotX_logic.R - contains logic specific for a given plot, and loads base_plotting_script.R and (in case of plot4 also all previous plots)
+3. plotX.R - is the MAIN PLOTTING FILE for every target plot. It loads plot_X_logic.R script and starts prorcessing.
+
+Moreover - remember to put all the scripts to the directory where data is stored (household_power_consumption.txt) and to SET WORKING DIRECTORY in RStudio to that directory. Scripts plotX.R should be started by "Source" option.
+
+Best regards!
+
 ## Introduction
 
 This assignment uses data from
